@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+title:  Nicolas Chauveau Design
+---
+
+<div class="projects-grid">
+{%- for projet in collections.projet -%}
+  <div class="projects-grid-item">
+    <img src="https://via.placeholder.com/470x300" />
+    <h2><a href="{{ projet.url }}">{{ projet.data.title }}</a></h2>
+    <h3>{{ projet.data.subtitle }}</h3>
+  </div>
+{%- endfor -%}
+</div>
